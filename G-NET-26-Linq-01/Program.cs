@@ -1,5 +1,6 @@
 ﻿using LINQ.Models;
 using System.Diagnostics;
+using System.Numerics;
 using System.Xml.Linq;
 using static LINQ.DataSources.Source;
 
@@ -81,6 +82,18 @@ namespace G_NET_26_Linq_01
             //{
             //    Console.WriteLine($"{item.ProductName} : {item.UnitsInStock}");
             //}
+            #endregion
+
+            #region 10. Using QUERY SYNTAX with a compound from clause
+            ////10. Using QUERY SYNTAX with a compound from clause, list all orders placed in 1997 or later showing CustomerID and OrderDate.
+            //var result = from c in CustomerList
+            //             from o in c.Orders
+            //             where o.OrderDate >= new DateTime(1997, 1, 1)
+            //             select new
+            //             {
+            //                 c.CustomerID,
+            //                 o.OrderDate
+            //             };
             #endregion
         }
     }
