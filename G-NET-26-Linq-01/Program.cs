@@ -35,6 +35,16 @@ namespace G_NET_26_Linq_01
             //}
 
             #endregion
+
+            #region 4. Get all products where UnitPrice is between 10 and 30
+            ////4. Get all products where UnitPrice is between 10 and 30 
+            //var result = ProductList.Where(p => p.UnitPrice >= 10 && p.UnitPrice <= 30);
+            #endregion
+
+            #region 5.Get all Condiments products that are in stock 
+            //5. Get all products that are in stock (UnitsInStock > 0) and belong to the "Condiments" category. 
+            var result = ProductList.Where( p => p.UnitsInStock > 0 && p.Category == "Condiments");
+            #endregion
         }
     }
 }
