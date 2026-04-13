@@ -73,6 +73,15 @@ namespace G_NET_26_Linq_01
             ////8. Sort ProductList by Category ascending, then within each category, sort by UnitPrice descending.
             //var result = ProductList.OrderBy(p => p.Category).ThenByDescending(p => p.UnitPrice);
             #endregion
+
+            #region 9. Get all products from the "Beverages" category, sorted by UnitsInStock descending
+            ////9. Get all products from the "Beverages" category, sorted by UnitsInStock descending. Print name and stock.
+            //var result = ProductList.Where(p => p.Category == "Beverages").OrderBy(p => p.UnitsInStock);
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine($"{item.ProductName} : {item.UnitsInStock}");
+            //}
+            #endregion
         }
     }
 }
