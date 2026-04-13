@@ -68,6 +68,11 @@ namespace G_NET_26_Linq_01
             //    Console.WriteLine(item);
             //}
             #endregion
+
+            #region 8. Sort ProductList by Category ascending
+            ////8. Sort ProductList by Category ascending, then within each category, sort by UnitPrice descending.
+            //var result = ProductList.OrderBy(p => p.Category).ThenByDescending(p => p.UnitPrice);
+            #endregion
         }
     }
 }
