@@ -48,16 +48,25 @@ namespace G_NET_26_Linq_01
             #endregion
 
             #region 6. Create a new anonymous type with three properties
-            //6. Create a new anonymous type with three properties:
-            //● Name → the product name
-            //● Price → the unit price
-            //● StockStatus → a string: "Available" if UnitsInStock > 0, otherwise "Out of Stock"
-            //● Print the result. 
-            var result = ProductList.Select(p => new {Name = p.ProductName, Price = p.UnitPrice, StockStatus = p.UnitsInStock > 0 ? "Available" : "Out of Stock" });
-            foreach (var product in result)
-            {
-                Console.WriteLine(product);
-            }
+            ////6. Create a new anonymous type with three properties:
+            ////● Name → the product name
+            ////● Price → the unit price
+            ////● StockStatus → a string: "Available" if UnitsInStock > 0, otherwise "Out of Stock"
+            ////● Print the result. 
+            //var result = ProductList.Select(p => new {Name = p.ProductName, Price = p.UnitPrice, StockStatus = p.UnitsInStock > 0 ? "Available" : "Out of Stock" });
+            //foreach (var product in result)
+            //{
+            //    Console.WriteLine(product);
+            //}
+            #endregion
+
+            #region 7. Print each product's name along with its position (1-based)in the list
+            ////7. Print each product's name along with its position (1-based)in the list. Expected format: 1.Chai, 2.Chang, etc. 
+            //var result = ProductList.Select((p, i) => $"{i + 1} . {p.ProductName}");
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
             #endregion
         }
     }
