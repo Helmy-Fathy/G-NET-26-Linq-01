@@ -1,4 +1,5 @@
 ﻿using LINQ.Models;
+using System.Diagnostics;
 using System.Xml.Linq;
 using static LINQ.DataSources.Source;
 
@@ -42,8 +43,21 @@ namespace G_NET_26_Linq_01
             #endregion
 
             #region 5.Get all Condiments products that are in stock 
-            //5. Get all products that are in stock (UnitsInStock > 0) and belong to the "Condiments" category. 
-            var result = ProductList.Where( p => p.UnitsInStock > 0 && p.Category == "Condiments");
+            ////5. Get all products that are in stock (UnitsInStock > 0) and belong to the "Condiments" category. 
+            //var result = ProductList.Where( p => p.UnitsInStock > 0 && p.Category == "Condiments");
+            #endregion
+
+            #region 6. Create a new anonymous type with three properties
+            //6. Create a new anonymous type with three properties:
+            //● Name → the product name
+            //● Price → the unit price
+            //● StockStatus → a string: "Available" if UnitsInStock > 0, otherwise "Out of Stock"
+            //● Print the result. 
+            var result = ProductList.Select(p => new {Name = p.ProductName, Price = p.UnitPrice, StockStatus = p.UnitsInStock > 0 ? "Available" : "Out of Stock" });
+            foreach (var product in result)
+            {
+                Console.WriteLine(product);
+            }
             #endregion
         }
     }
