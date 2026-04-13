@@ -26,6 +26,15 @@ namespace G_NET_26_Linq_01
             //}
             #endregion
 
+            #region 3.Sort all products by UnitPrice(ascending)
+            ////3.Sort all products by UnitPrice(ascending). Print each product's name and price.
+            //var sortedProds = ProductList.OrderBy(p => p.UnitPrice);
+            //foreach (var product in sortedProds)
+            //{
+            //    Console.WriteLine($"Product's name: {product.ProductName}, Price: {product.UnitPrice}");
+            //}
+
+            #endregion
         }
     }
 }
