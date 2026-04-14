@@ -1,4 +1,5 @@
-﻿using LINQ.Models;
+﻿using LINQ.Helpers;
+using LINQ.Models;
 using System.Diagnostics;
 using System.Numerics;
 using System.Xml.Linq;
@@ -103,6 +104,12 @@ namespace G_NET_26_Linq_01
             //{
             //    Console.WriteLine(item);
             //}
+            #endregion
+
+            #region 12. Sort first by-word length and then by a case -insensitive
+            ////12. Sort first by-word length and then by a case -insensitive sort of the words in an array.
+            //String[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+            //var result = Arr.OrderBy(word => word.Length).ThenBy(word => word , new StringCaseInsensitiveComparer());
             #endregion
         }
     }
