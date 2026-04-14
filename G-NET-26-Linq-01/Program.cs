@@ -95,6 +95,15 @@ namespace G_NET_26_Linq_01
             //                 o.OrderDate
             //             };
             #endregion
+
+            #region 11. Show position number alongside ProductName
+            ////11. Show position number alongside ProductName
+            //var result = ProductList.Select((p, i) => $"{i}. {p.ProductName}");
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
         }
     }
 }
