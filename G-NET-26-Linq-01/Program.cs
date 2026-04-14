@@ -1,6 +1,7 @@
 ﻿using LINQ.Helpers;
 using LINQ.Models;
 using System.Diagnostics;
+using System.Diagnostics.Metrics;
 using System.Numerics;
 using System.Xml.Linq;
 using static LINQ.DataSources.Source;
@@ -110,6 +111,13 @@ namespace G_NET_26_Linq_01
             ////12. Sort first by-word length and then by a case -insensitive sort of the words in an array.
             //String[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
             //var result = Arr.OrderBy(word => word.Length).ThenBy(word => word , new StringCaseInsensitiveComparer());
+            #endregion
+
+            #region 13. Create a list of all digits 
+            ////13. Create a list of all digits in the array whose second letter is 'i' that is reversed from the order in the original array.
+            //String[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+
+            //var result = Arr.Where(word => word.Length >= 2 && word[1].ToString().ToLower() == "i").Reverse();
             #endregion
         }
     }
